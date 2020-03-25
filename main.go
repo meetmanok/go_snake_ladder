@@ -43,6 +43,8 @@ func main(){
 			fmt.Printf("Hurray, got the ladder climb to: %d\n", v)
 			board.Pawn.SetPos(v)
 		}
-
+	}
+	if board.Pawn.GetPos() == 100 {
+		fmt.Printf("Game Completed Successfully :-)")
 	}
 }
