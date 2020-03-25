@@ -35,7 +35,7 @@ func main(){
 
 		//Verify that the current position of pawn is having Snake head or ladder foot
 		//if current pawn pos is Snake's head pawn will be move to snake's tail
-		//if current pawn pos is Ladder's bottom pawn will be move to Ladder's top
+		//if current pawn pos is Ladder's foot pawn will be move to Ladder's top
 		if v, ok := board.Snakes.GetSnakesPos(board.Pawn.GetPos()); ok {
 			fmt.Printf("Oops, bitten by snake back to: %d\n", v)
 			board.Pawn.SetPos(v)
